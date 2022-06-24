@@ -9,7 +9,7 @@ EXPOSE 22 80 443
 WORKDIR /opt
 
 RUN apt-get update && apt-get install -y wget && apt-get purge && rm -rf /var/lib/apt/lists/* && apt-get clean
-RUN wget https://simple-help.com/releases/SimpleHelp-linux-amd64.tar.gz
+RUN wget https://simple-help.com/releases/5.3.8/SimpleHelp-linux-amd64.tar.gz
 RUN tar -zxf SimpleHelp-linux-amd64.tar.gz
 RUN rm SimpleHelp-linux-amd64.tar.gz
 
